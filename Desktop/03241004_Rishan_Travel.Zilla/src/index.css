@@ -1,0 +1,237 @@
+/* Global Styles - Professional & Beautiful Design */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  background: linear-gradient(135deg, #0a0f1b 0%, #0f1429 50%, #050a12 100%);
+  background-attachment: fixed;
+  color: #c4d1e0;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden; /* prevent horizontal scrollbar */
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: -0.5px;
+}
+
+h1 {
+  font-size: 2.25rem; /* slightly smaller for balanced layout */
+  color: #fff;
+}
+
+h2 {
+  font-size: 1.75rem;
+  color: #fff;
+}
+
+h3 {
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+h4 {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: #a8b9cc;
+}
+
+a {
+  color: #7fb3ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #a4d5ff;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 0.8em 1.5em;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+button:focus,
+button:focus-visible {
+  outline: none;
+}
+
+/* Input Styling */
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: 1em;
+  background: rgba(59, 130, 246, 0.05);
+  border: 1px solid rgba(127, 179, 255, 0.15);
+  color: #fff;
+  padding: 0.7em 1em;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(196, 209, 224, 0.5);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  background: rgba(59, 130, 246, 0.1);
+  border-color: rgba(127, 179, 255, 0.3);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.1);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(10, 15, 27, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #3b82f6, #7fb3ff);
+  border-radius: 10px;
+  border: 3px solid rgba(10, 15, 27, 0.5);
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #7fb3ff, #a4d5ff);
+  border: 2px solid rgba(10, 15, 27, 0.5);
+}
+
+/* Selection Styling */
+::selection {
+  background: linear-gradient(135deg, #3b82f6, #7fb3ff);
+  color: #fff;
+}
+
+::-moz-selection {
+  background: linear-gradient(135deg, #3b82f6, #7fb3ff);
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  body {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  h4 {
+    font-size: 0.95rem;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  button {
+    padding: 0.65em 1.2em;
+    font-size: 0.95em;
+  }
+
+  input,
+  textarea,
+  select {
+    padding: 0.6em 0.9em;
+    font-size: 0.95em;
+  }
+}
+
